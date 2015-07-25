@@ -56,3 +56,7 @@ Para esto podemos hacer lo siguiente:
       2-  Alterando el archivo .json (Lo cual es recomendable) con la
           siguiente: $ bower install <paquete> -S ("s" mayúscula).
         sintaxis:
+******************************************************************************
+
+Para conocer los paquetes disponibles, visitar la página http://bower.io/search/
+Cuailquier duda visitar la documentación oficial en http://bower.io/
