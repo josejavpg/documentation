@@ -1,0 +1,20 @@
+--- Bower ---
+"A package manager for the web"
+
+Se utiliza para FACILITAR el manejo (instalar) paquetes o librerias  necesarias para el aplicativo web. Por ejemplo jquery.
+
+Esto se realiza mediante la terminal.
+
+Instalación:
+1)  Se debe tener instalado git y node.js en tu pc.
+    Para verificar esto, en la terminal escribimos $ node -v y $ git -v de no estar instalados, los invito a visitar la página https://nodejs.org/ y https://git-scm.com/
+
+2)  Para instalar bower escribimos $ npm install -g bower
+    Esto descargará todo lo necesario para poder comenzar a funcionar.
+
+Uso:
+1)  La sintaxis para instalar paquetes es: $ bower install <paquete>
+    ejemplo: $ bower install jquery
+    Este comando descarga el paquete requerido en la carpeta bower_components/
+
+    * Hay paquetes que tienen dependencias y bower se encarga de descargarlo tambien, por ejemplo el paquete de Bootstrap requiere el uso de jQuery, así que al descargar Bootstrap, bower también va a descargar jQuery.
