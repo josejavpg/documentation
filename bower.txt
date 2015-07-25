@@ -1,7 +1,7 @@
 --- Bower ---
 "A package manager for the web"
 
-Se utiliza para FACILITAR el manejo (instalar) paquetes o librerias  necesarias para el aplicativo web. Por ejemplo jquery.
+Se utiliza para FACILITAR el manejo (instalar o desinstalar) paquetes o librerias  necesarias para el aplicativo web. Por ejemplo jquery.
 
 Esto se realiza mediante la terminal.
 
@@ -10,7 +10,7 @@ Instalación:
     Para verificar esto, en la terminal escribimos $ node -v y $ git -v de no estar instalados, los invito a visitar la página https://nodejs.org/ y https://git-scm.com/
 
 2)  Para instalar bower escribimos $ npm install -g bower
-    Esto descargará todo lo necesario para poder comenzar a funcionar.
+    Esto descargará e instalará bower de forma global.
 
 Uso:
 1)  La sintaxis para instalar paquetes es: $ bower install <paquete>
@@ -18,3 +18,41 @@ Uso:
     Este comando descarga el paquete requerido en la carpeta bower_components/
 
     * Hay paquetes que tienen dependencias y bower se encarga de descargarlo tambien, por ejemplo el paquete de Bootstrap requiere el uso de jQuery, así que al descargar Bootstrap, bower también va a descargar jQuery.
+
+    ** <paquete> == nombre del paquete, url, url Github o un archivo Git.
+
+2)  Para saber que librerias tenemos instaladas utilizamos $ bower list
+
+3)  Para conocer el directorio donde está agregado "x" paquete colocamos
+    $ bower list --paths
+    Con esta información ya podemos conectar nuestra aplicación con las librerias mediante de los tag <link> y <script>
+
+4)  Bwoer va a instalar siempre la última versión del paquete requerido,pero
+    también se pueden pedir versiones específicas con la siguiente sintaxis:
+    $ bower install <paquete>#<version>
+    Ejemplo: $ bower install jquery#1.9.1
+    esto traerá la versión 1.9.1 de jquery
+
+5)  Para desinstalar un paquete, usamos $ bower uninstall <paquete>
+
+******************************************************************************
+                              LA MAGIA DE BOWER
+******************************************************************************
+
+Todo esto que hicimos manualmente, se puede hacer una sola vez.
+Bower tiene la capacidad de  crear un archivo .json que nos ayuda a tener las librerias que usamos siempre para nuestros proyectos en  un solo lugar.
+Este archivo aparte de instalarnos todos los paquetes necesarios, crea una orden para que se ignoren unos archivos específicos los cuales no deben subirse.
+
+Para esto podemos hacer lo siguiente:
+
+1)  Usamos la sintaxis $ bower init
+    Este comando es el que crea el archivo .json, al presionar enter, te va a pedir una información básica sobre el archivo, como el nombre, la versión, la descripció, etc.
+
+2)  Para hacer uso de este archivo, simplemente nos ubicamos en nuestro
+    proyecto y corremos el comando $ bower install.
+
+3)  Si queremos agregar una nueva librería, podemos hacerlo de 2 maneras
+      1-  Sin alterar el archivo .json (Como se mostro al inicio).
+      2-  Alterando el archivo .json (Lo cual es recomendable) con la
+          siguiente: $ bower install <paquete> -S ("s" mayúscula).
+        sintaxis:
