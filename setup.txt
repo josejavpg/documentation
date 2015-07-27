@@ -1,0 +1,35 @@
+Acá hablaré sobre la configuración que tengo en mi máquina de trabajo.
+
+- iTerm2: Es un emulador del terminal de OSX.
+
+- oh-my-zsh: Cambia el shell que viene por defecto en la terminal (bash) por zsh, que otorga nuevas funcionalidades.
+
+- Git: Es un software de control de versiones.
+
+- Ruby Version Manager (RVM): Permite instalar y tener actualizado Ruby y Ruby on Rails desde la terminal.
+
+- Homebrew: Descarga e instala complementos a la terminal.
+
+- Node.js: Fue creado con el enfoque de ser útil en la creación de programas de red altamente escalables. Esto instala npm.
+
+- npm: npm is the package manager for javascript. Es un requisito tenerlo para instalar coffeescript y otras quehablaremos más adelante.
+
+\/\/ Los siguientes componentes son instalados por medio de npm \/\/
+
+- bower: The browser package manager.
+
+- Grunt: The JavaScript Task Runner.
+
+- grunt-cli: The grunt command line interface.
+
+- coffee-script: Es un lenguaje que se escribe con sintaxis Python y se compila en JS.
+
+- yo: CLI tool for running Yeoman generators.
+
+- Yeoman: scaffolds out a new application, writing your build configuration.
+
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+El editro de texto usado por mi es:
+
+- Sublime Text 3
