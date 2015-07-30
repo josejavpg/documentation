@@ -1,0 +1,35 @@
+///------- ESTA HERRAMIENTA SIRVE PARA CREAR APLICACIONES WEB DE MANERA SENCILLA -----\\\
+
+"... yo scaffolds out a new application, writing your build configuration (e.g Gruntfile, Gulpfile) and pulling in relevant build tasks and package manager dependencies (Bower, npm) that you might need for your build."
+
+"... Scaffolding, in the Yeoman sense of the word, means generating files for your web app based on your specific configuration requests..."
+
+Es una colección de tres herramientas que permite manejar nuestro flujo de trabajo mucho más eficientes.
+Trae:
+- yo: Se utiliza para construir el 'esqueleto' de la aplicación.
+- grunt: usada para ejecutar tareas que nos ayudara a hacer preview de nuestras aplicaciones y al final construirlas.
+- bower
+
+Para instalar:
+
+* Se debe tener instalado node.js. Para verificar ejecutamos el comando $ node -v
+
+* Lo instalamos de manera global en nuestro ordenardo con el junto con todos sus componentes con el comando $ npm install --global yo bower grunt-cli
+  Pero si lo que se quiere es instalar solo Yeoman, el comando debe ser $ npm install -g yo
+
+Uso
+
+- Si lo que deseas es crear una aplicación web con uso de HTML, CSS y JS, debes usar ls siguientes comandos:
+  * $ npm install -g generator-webapp
+    Esto instala el generador webapp de manera global. Este generador tiene trae todo lo necesario para crear un aplivativo web.
+  * $ mkdir my-yo-project
+    Esto es para crear la carpeta donde va ir el proyecto.
+  * $ cd my-yo-project
+    Ingresamos en la carpeta del proyecto
+  * $ yo webapp
+    Este comando corre el generador webapp dentro de la carpeta especificada y crea todos los archivos y las carpetas necesarias para hacer funcionar tu aplicaciñon.
+    Te preguntara si quieres utiliar las siguientes tecnologñias en tu aplicación:
+    - SASS
+    - Boootstrap
+    - Modernizer
+    Vienen seleccionadas por defecto, si las quieres quitar debes navegar con las flechas y pulsar la tecla espacio.
